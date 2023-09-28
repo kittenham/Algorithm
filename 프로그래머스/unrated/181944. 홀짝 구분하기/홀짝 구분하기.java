@@ -12,3 +12,10 @@ public class Solution {
         }
     }
 }
+
+
+/*다른풀이 - 삼항연산자 이용
+System.out.print(n + " is "+(n % 2 == 0 ? "even" : "odd"));
+*/
+
+
