@@ -13,7 +13,6 @@ class Solution {
 
 
 /*다른사람 풀이*/
-/*
 import java.util.stream.IntStream;
 
 class Solution {
@@ -21,4 +20,3 @@ class Solution {
         return IntStream.range(0, included.length).map(idx -> included[idx]?a+(idx*d):0).sum();
     }
 }
-*/
