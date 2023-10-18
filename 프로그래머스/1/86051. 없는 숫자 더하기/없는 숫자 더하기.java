@@ -20,3 +20,28 @@ class Solution {
         return sum;
     }
 }
+
+
+//다른사람 풀이-1
+//있는 숫자를 모두 더해서 빼주면됨..(와 진짜 생각도 못했는데ㅋㅋㅋ)
+class Solution {
+    public int solution(int[] numbers) {
+        int sum = 45;
+        for (int i : numbers) {
+            sum -= i;
+        }
+        return sum;
+    }
+}
+
+
+//다른사람 풀이-2
+import java.util.Arrays;
+
+class Solution {
+    public int solution(int[] numbers) {
+        return 45-Arrays.stream(numbers).sum();
+    }
+}
+
+
