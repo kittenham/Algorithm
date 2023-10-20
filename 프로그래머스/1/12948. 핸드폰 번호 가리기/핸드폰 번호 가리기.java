@@ -29,7 +29,7 @@ class Solution {
 }
 
 
-//다른 사람 풀이 추가 -1
+//다른 사람 풀이 추가 -1 (정규표현식 사용)
 class Solution {
   public String solution(String phone_number) {
     return phone_number.replaceAll(".(?=.{4})", "*");
@@ -44,7 +44,7 @@ class Solution {
 */
 
 
-//다른사람 풀이추가 -2
+//다른사람 풀이추가 -2 (toCharArray() 사용)
 class Solution {
   public String solution(String phone_number) {
      char[] ch = phone_number.toCharArray();
