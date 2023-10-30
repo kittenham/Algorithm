@@ -24,3 +24,17 @@ class Solution {
         return answer;
     }
 }
+
+
+//다른사람 풀이
+import java.util.Arrays;
+
+class Solution {
+  public int[] solution(int[] arr, int divisor) {
+          int[] answer = Arrays.stream(arr).filter(factor -> factor % divisor == 0).toArray();
+          if(answer.length == 0) answer = new int[] {-1};
+          java.util.Arrays.sort(answer);
+          return answer;
+  }
+}
+
