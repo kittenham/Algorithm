@@ -9,3 +9,9 @@ class Solution {
         return answer;
     }
 }
+
+//나의 다른풀이
+int int_str = Integer.parseInt(String.valueOf(char_str)); 대신에
+int int_str = Character.getNumericValue(char_str); 를 사용할 수도 있다. 실행시간은 비슷함.
+
+
