@@ -9,3 +9,11 @@ class Solution {
         return answer;
     }
 }
+
+
+//나의 다른 풀이 추가
+class Solution {
+    public int solution(int slice, int n) {
+        return  (int) Math.ceil((double) n / slice);
+    }
+}
