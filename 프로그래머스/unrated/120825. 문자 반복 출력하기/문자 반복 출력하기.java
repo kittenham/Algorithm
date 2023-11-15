@@ -1,7 +1,9 @@
 class Solution {
     public String solution(String my_string, int n) {
+
         //길이가 n배인 StringBuilder를 생성하여 문자열을 구성
         StringBuilder answer = new StringBuilder(my_string.length()*n);
+
         //문자열의 각 문자에 대해 반복하여 추가
         for(int i=0; i<my_string.length(); i++){
             char my = my_string.charAt(i);
@@ -16,3 +18,17 @@ class Solution {
         return answer.toString();
     }
 }
+
+
+
+//다른풀이
+class Solution {
+    public String solution(String my_string, int n) {
+        StringBuilder sb = new StringBuilder();
+        for(char c : my_string.toCharArray()){
+            sb.append((c + "").repeat(n));
+        }
+        return sb.toString();
+    }
+}
+
