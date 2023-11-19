@@ -9,3 +9,14 @@ class Solution {
         return answer;
     }
 }
+
+
+
+//Stream사용하는 풀이 추가
+import java.util.stream.IntStream;
+
+class Solution {
+    public int[] solution(int n) {
+        return IntStream.rangeClosed(0, n).filter(value -> value % 2 == 1).toArray();
+    }
+}
