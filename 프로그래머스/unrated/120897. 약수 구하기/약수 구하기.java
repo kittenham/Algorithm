@@ -1,15 +1,21 @@
 import java.util.*;
 
 class Solution {
-    public List<Integer> solution(int n) {
-        ArrayList<Integer> answer = new ArrayList<>();
+    public int[] solution(int n) {
+        int cnt =0;
         for(int i=1; i<=n; i++){
             if(n%i==0){
-                answer.add(i);
+                cnt++;
             }
         }
         
-        Collections.sort(answer);
+        int[] answer = new int[cnt];
+        int idx = 0;
+        for(int i=1; i<=n; i++){
+            if(n%i==0){
+                answer[idx++] = i;
+            }
+        }
         
         return answer;
     }
